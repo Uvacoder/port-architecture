@@ -1,0 +1,382 @@
+html, body {
+    background-image: url(img/cubes-orly-white3.png); 
+     direction: ltr;
+     text-align: left;
+     margin: 0;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     line-height:1.2;
+ }
+
+ .logo {
+     padding: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-bottom: 1px solid #103443;
+    text-align: center;
+
+ }
+ a {
+     color: black;
+     text-decoration: none;
+ }
+
+
+ .row{
+    max-width: 35cm;
+    margin: auto;
+    
+    
+}
+ .headline   {
+    text-align: center;
+ }
+
+ .coverImage {
+    float: right;
+    width: 65.5%;
+    margin-top: 20px;
+   
+
+ }
+
+  .overImage {
+    margin-top: 7.5%; 
+    margin-left:17%; 
+    position: absolute;
+    width: 34%;
+    line-height: 45px;
+    text-align: right;
+
+ }
+
+.covergif {
+    float: left;
+    width: 31.5%;
+    margin-top: 20px;
+   
+
+ }
+
+ .column {
+     float: left;
+     width: 32%;
+     padding-left: calc(1% - 1px);
+     padding-right: 1%;
+     margin-bottom: 18px;
+     /*border-left: 1px solid black;*/
+    border-width: 1px; border-style: solid;
+    -webkit-border-image: -webkit-linear-gradient(top #103443, white) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(#103443, white) 1 100%;
+    -moz-border-image: -moz-linear-gradient(#103443, white) 1 100%;
+    -o-border-image: -o-linear-gradient(#103443, white) 1 100%;
+    border-image: linear-gradient(to bottom,#FFD700, rgb(238, 238, 238)) 1 100%;
+    border-right: 0px;
+ }
+
+.column>div{
+
+    padding-right: 2%;
+    padding-left: 2%;
+
+}
+ .column:first-child>.headline {
+    padding-left: 0%;
+  
+ }
+#lastcolumn>.headline {
+    padding-right: 0%;
+   
+    
+}
+
+ .column:first-child {
+    padding-left: 0%;
+    border-left: none;
+ }
+ #lastcolumn{
+    padding-right: 0%;
+  
+    
+}
+ .headcolumn {
+     
+     font-size: 26px;
+     color: #103443;
+     font-weight: 300; 
+     
+ }
+
+  .headcolumn1 {
+     
+     font-size: 25px;
+     color: #103443;
+     font-weight: 300; 
+     
+ }
+
+
+
+ .imagethumb1 {
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #103443;
+    
+         
+ }
+
+ .imagethumb2 {
+    height: 202.8px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #103443;
+         
+ }
+
+ .imagethumb3 {
+    height: 335.1px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #103443;
+         
+ }
+
+
+ .pagetitle {
+    width:100% ;
+    margin-top: 4%; 
+    margin-bottom: 4%;
+    
+ }
+
+ .about {
+    font-weight: normal;
+    text-align: justify; 
+    font-size: 18.5px;
+    
+ }
+
+
+ .column>a>div {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1820px) {
+
+      .overImage {
+
+    margin-top: 8%; 
+    margin-left:20.5%; 
+
+ }  
+
+}
+
+@media only screen and (max-width: 1700px) {
+
+      .overImage {
+    
+    margin-top: 8.5%; 
+    margin-left:24.5%; 
+
+ }  
+
+}
+
+@media only screen and (max-width: 1550px) {
+
+      .overImage {
+    
+    margin-top: 10%; 
+    margin-left:30%; 
+    line-height: 35px;
+
+ }  
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+      .overImage {
+    
+    margin-top: 12%; 
+    margin-left:31.5%; 
+    line-height: 30px;
+    width: 37%;
+
+ }  
+
+}
+
+@media only screen and (max-width: 850px) {
+    .headcolumn {
+     
+        font-size: 18px;
+       
+    }
+
+     .headcolumn1 {
+     
+     font-size: 18px;
+     color: #103443;
+     
+     
+   }
+
+      .overImage {
+    
+    line-height: 25px;
+    text-align: center;
+    margin-top: 12.5%; 
+    margin-left:47%; 
+
+ }
+    
+
+}
+
+@media only screen and (max-width: 630px) {
+    .row>div{
+        margin-right: 0%;
+        margin-left: 0%;
+        padding-right: 0%;
+        padding-left: 0%;
+       }
+    .column {
+
+        float: none;
+        width: 100%;
+        border-width: 0;
+        border-image:none
+    }
+
+    .headcolumn {
+        float: none;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 0;
+        font-size: 22px;
+    
+    }
+
+     .headcolumn1 {
+        float: none;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 0;
+        font-size: 22px;
+      
+     
+ }
+    .row{
+        margin-top: 4%;
+        
+    }
+     .coverImage {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+
+    }
+    .overImage {
+        margin-top: -30%;
+        margin-left: 62%;
+        text-align: center;
+        width: 58%;
+        line-height: 24px;
+
+    }
+
+    .covergif {
+      float: none;
+      width: 100%;
+      padding-left: 0;
+      margin-top: 10px;
+
+    }
+
+    .imagethumb1 {
+    
+        border: none;
+                   
+     }
+    
+     .imagethumb2 {
+        height: 350px;
+        border: none;
+             
+     }
+     .imagethumb3 {
+        height: 350px;
+        border: none;
+             
+     }
+
+     .column>div{
+
+        padding-right: 0%;
+        padding-left: 0%;
+    
+    }
+
+     .about {
+    font-weight: normal;
+    text-align: justify; 
+    font-size: 15px;
+    
+   }
+
+
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+
+@media only screen and (max-width: 430px) {
+
+   .overImage {
+        margin-top: -33.5%;
+        margin-left: 63%;
+        text-align: center;
+        width: 58%;
+        line-height: 16px;
+
+    }
+
+     .imagethumb1 {
+         height: 270px;
+        
+                   
+     }
+    
+     .imagethumb2 {
+        height: 270px;
+       
+             
+     }
+     .imagethumb3 {
+        height: 270px;
+        
+     }
+
+
+}
+
