@@ -1,0 +1,22 @@
+<div><a class="headcolumn" href="index.html"><img src="img/logo-no-text.png" alt="Home"></a></div>
+<a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</a>
+<ul id="navbar-links">
+    <li><a href="about.html"><img src="img/About.png" alt="About"></a></li>
+    <li><a href="art-gallery.html"><img src="img/Art_Gallery.png" alt="Art Gallery"></a></li>
+    <li><a href="architecture-gallery.html"><img src="img/Architecture_Gallery.png" alt="Architecture Gallery"></a></li>
+    <li><a href="academics&theory.html"><img src="img/Academics&Theory.png" alt="Academics & Theory"></a></li>
+    <li><a href="web-development.html"><img src="img/Web_Development.png" alt="Web Development"></a></li>
+    <li><a href="contact.html"><img src="img/Contact.png" alt="Contact"></a></li>
+</ul>
+
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementById('navbar-links')
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
