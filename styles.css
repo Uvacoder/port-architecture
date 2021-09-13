@@ -24,7 +24,7 @@ html, body {
 }
 
 .overImage {
-   margin-top: -80vh;
+   margin-top: 20vh;
    margin-left: 65%;
    position: absolute;
    width: 30%;
@@ -46,7 +46,7 @@ html, body {
    text-align: center;
 }
 
-#main-page {
+#main-page, #lastline {
    display: none;
 }
 
@@ -261,11 +261,11 @@ a:hover {
 }
 
 .fadeInLeft {
-   animation: fadeInLeft 5s;
-   -webkit-animation: fadeInLeft 5s;
-   -moz-animation: fadeInLeft 5s;
-   -o-animation: fadeInLeft 5s;
-   -ms-animation: fadeInLeft 5s;
+   animation: fadeInLeft 4s;
+   -webkit-animation: fadeInLeft 4s;
+   -moz-animation: fadeInLeft 4s;
+   -o-animation: fadeInLeft 4s;
+   -ms-animation: fadeInLeft 4s;
    transition-timing-function: ease-in;
 }
 
@@ -343,12 +343,20 @@ a:hover {
    opacity: 0;
    visibility: hidden;
    transition: 0.9s ease-out;
+   -webkit-transition: 0.9s ease-out;
+   -moz-transition: 0.9s ease-out;
+   -o-transition: 0.9s ease-out;
+   -ms-transition: 0.9s ease-out;
 }
 
 .fade-in-image-slider {
    opacity: 1;
    visibility: visible;
    transition: 0.9s ease-in-out 0.9s;
+   -webkit-transition: 0.9s ease-in-out 0.9s;
+   -moz-transition: 0.9s ease-in-out 0.9s;
+   -o-transition: 0.9s ease-in-out 0.9s;
+   -ms-transition: 0.9s ease-in-out 0.9s;
 }
 
 /* gallery pages */
@@ -488,15 +496,13 @@ form {
 
 @media only screen and (max-width: 1400px) {
    .overImage {
-      margin-top: -47vh;
+      margin-top: 55vh;
       margin-left: 67%;
-      position: absolute;
-      width: 31%;
-      line-height: 45px;
-      text-align: right;
+      width: 32%;
    }
    .overImage p {
       font-weight: 600;
+      width: 100%;
    }
    .overImage p:last-child {
       color: #ffd700;
@@ -505,7 +511,6 @@ form {
       width: 45%;
    }
    .covergif {
-      width: 100%;
       margin-top: 0;
       padding-top: 4.75vw;
       height: calc(610px + 2.5vw);
@@ -531,16 +536,15 @@ form {
 @media only screen and (max-width: 1190px) {
    /* intro-page visibility on smaller screens */
    .coverImage {
-      visibility: hidden;
+      background-image: none;
    }
    .overImage {
-      margin-top: -70vh;
-      margin-left: 20%;
-      position: absolute;
-      width: 60%;
+      margin-top: 30vh;
+      margin-left: 22%;
+      width: 55%;
    }
    .overImage p {
-      font-size: 3vw;
+      font-size: 2.8vw;
    }
    /* collapse navbar */
    .toggle-button {
@@ -607,6 +611,10 @@ form {
 }
 
 @media only screen and (max-width: 630px) {
+   .overImage p {
+      font-size: 6.5vw;
+      text-align: center;
+   }
    #main-page .navbar {
       margin: 0;
       width: 97%;
@@ -622,11 +630,6 @@ form {
    }
    .row {
       margin-top: 4%;
-   }
-   .coverImage {
-      float: none;
-      width: 100%;
-      padding-left: 0;
    }
    .imagethumb1, .imagethumb2 {
       border: none;

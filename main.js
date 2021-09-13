@@ -7,33 +7,33 @@ toggleButton.addEventListener('click', () => {
 
 //image sliders:
 const artGalleryImg = [
-    'img/Art_Gallery/White-City_Black-City/2_Mendelsohn-North.jpg',
-    'img/Art_Gallery/Tel-Aviv-Alternative/18_TheEnigmaof.jpg',
-    'img/Art_Gallery/Cover.jpg',
-    'img/Art_Gallery/Old-Young-Portraits/14_Amit.png',
-    'img/Art_Gallery/Unscaled/Pine-Cone-Front.jpg',
+    'img/Thumbnails/2_Mendelsohn-North.jpg',
+    'img/Thumbnails/18_TheEnigmaof.jpg',
+    'img/Thumbnails/Cover.jpg',
+    'img/Thumbnails/14_Amit.png',
+    'img/Thumbnails/Pine-Cone-Front.jpg',
 ]
 const architectureGalleryImg = [
-    'img/Architecture_Gallery/Rejuvenation-Trail/3.jpg',
-    'img/Architecture_Gallery/Mixed-Use-Compound/e_VR_ICI009-2.jpg',
-    'img/Architecture_Gallery/117-Rothschild-Blvd/historic.jpg',
-    'img/Architecture_Gallery/Artists-Studio-Gallery/erez012.jpg',
-    'img/Architecture_Gallery/Point-of-Reflection/IMG_6035.jpg',
-    'img/Architecture_Gallery/Haifa-Residential/nw-color-1-rendered.jpg',
-    'img/Architecture_Gallery/Tempelhof-Messe/CCF31072010_00002.jpg',
-    'img/Architecture_Gallery/Azrieli-Sarona-Center/azrieli-sarona_moshe-tzur-architects-and-town-planners8.jpg',
+    'img/Thumbnails/3.jpg',
+    'img/Thumbnails/e_VR_ICI009-2.jpg',
+    'img/Thumbnails/historic.jpg',
+    'img/Thumbnails/erez012.jpg',
+    'img/Thumbnails/IMG_6035.jpg',
+    'img/Thumbnails/nw-color-1-rendered.jpg',
+    'img/Thumbnails/CCF31072010_00002.jpg',
+    'img/Thumbnails/azrieli-sarona_moshe-tzur-architects-and-town-planners8.jpg',
 ]
 const academicsAndTheoryImg = [
-    'img/Academics&Theory/TheSublimeObjectofNaziArchitecture/10_Tempelhof.jpg',
-    'img/Art_Gallery/Old-Young-Portraits/12_Self-Color.jpg',
-    'img/Academics&Theory/Building-Entrances-as-Cultural-Narratives/AhuzatBayit.jpg',
-    'img/Academics&Theory/Rembrandt_van_Rijn_-_Portrait_of_the_Artist_as_a_Young_Man_-_Google_Art_Project.jpg',
-    'img/Academics&Theory/TheSublimeObjectofNaziArchitecture/Figure10_Nürnberg,_Reichsparteitag,_Lichtdom.jpg',
+    'img/Thumbnails/10_Tempelhof.jpg',
+    'img/Thumbnails/12_Self-Color.jpg',
+    'img/Thumbnails/AhuzatBayit.jpg',
+    'img/Thumbnails/Rembrandt_van_Rijn_-_Portrait_of_the_Artist_as_a_Young_Man_-_Google_Art_Project.jpg',
+    'img/Thumbnails/Figure10_Nürnberg,_Reichsparteitag,_Lichtdom.jpg',
 ]
 const webDevelopmentImg = [
-    'img/Web_Development/card-game.png',
-    'img/Web_Development/todo-list.png',
-    'img/Web_Development/trade-app.png'
+    'img/Thumbnails/card-game.jpg',
+    'img/Thumbnails/todo-list.png',
+    'img/Thumbnails/trade-app.png'
 ]
 
 const changeImgTimeInterval = 4000
@@ -53,6 +53,7 @@ function changeImg(id, images, i) {
 function slideIntro() {
     $('#intro-page').slideUp(1900) 
     $('#main-page').slideDown(1900)
+    $('#lastline').slideDown(1400)
     $('.overImage').fadeOut(800)
 }
 
@@ -63,6 +64,6 @@ $(window).on('load', function () {
         changeImg("architectureGalleryImg", architectureGalleryImg, 0)
         changeImg("academicsAndTheoryImg", academicsAndTheoryImg, 0)
         changeImg("webDevelopmentImg", webDevelopmentImg, 0)  
-    }, 5300)
+    }, 4800)
     
 });
