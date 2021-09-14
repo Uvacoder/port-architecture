@@ -8,7 +8,7 @@ $(function () {
     $("#navbar").load("navbar.html");
 });
 
-//submitting form
+//submitting contact form
 $('#contact-form').submit(function (e) {
     e.preventDefault();
     // generate a five digit number for the contact_number variable

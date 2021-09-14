@@ -37,7 +37,7 @@ html, body {
 .overImage p {
    text-transform: uppercase;
    width: 97%;
-   font-size: 1.56vw;
+   font-size: 1.52vw;
    text-align: justify;
    font-weight: 500;
 }
@@ -354,8 +354,8 @@ a:hover {
    visibility: visible;
    transition: 0.9s ease-in-out 0.9s;
    -webkit-transition: 0.9s ease-in-out 0.9s;
-   -moz-transition: 0.9s ease-in-out 0.9s;
-   -o-transition: 0.9s ease-in-out 0.9s;
+   -moz-transition: background-image 0.9s ease-in-out;
+   -o-transition: all 0.9s ease-in-out 0.9s;
    -ms-transition: 0.9s ease-in-out 0.9s;
 }
 
@@ -520,6 +520,25 @@ form {
    }
 }
 
+/* for wide screens */
+
+@media only screen and (max-height: 1000px) {
+   .coverImage {
+      background-position: 0vh;
+   }
+}
+
+@media only screen and (max-height: 700px) {
+   .overImage {
+      margin-top: 14vh;
+      margin-left: 62%;
+      width: 25%;
+   }
+   .overImage p {
+      font-size: 1.25vw;
+   }
+}
+
 @media only screen and (max-width: 1250px) {
    .contact-section {
       display: block;
@@ -647,10 +666,13 @@ form {
    }
    .section {
       width: 100%;
-      padding: 0.5% 0;
+      padding: 1.5% 0;
    }
    .section:hover {
       width: 100%;
+   }
+   .section:last-child {
+      padding-bottom: 3%;
    }
    .covergif {
       padding-bottom: 4vw;

@@ -39,7 +39,7 @@ const webDevelopmentImg = [
 const changeImgTimeInterval = 4000
 
 function changeImg(id, images, i) {
-    $('#' + id).css('background-image', 'url(' + images[i] + ')').addClass('fade-in-image-slider') 
+    $('#' + id).css('background-image', 'url(' + images[i] + ')').addClass('fade-in-image-slider')
     if (i < images.length -1) {
         i++
     }
