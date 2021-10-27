@@ -33,7 +33,8 @@ const academicsAndTheoryImg = [
 const webDevelopmentImg = [
     'img/Thumbnails/card-game.jpg',
     'img/Thumbnails/todo-list.png',
-    'img/Thumbnails/trade-app.png'
+    'img/Thumbnails/trade-app.png',
+    'img/Thumbnails/mysender-app.png'
 ]
 
 const changeImgTimeInterval = 4000
