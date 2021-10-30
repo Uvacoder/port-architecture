@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: /architecture-gallery_Rejuvenation-Trail.html
-Disallow: /architecture-gallery_Haifa-Residential.html
-Disallow: /architecture-gallery_Artist's-Studio-Gallery.html
-Disallow: /architecture-gallery_Mixed-Use-Compound.html
-Disallow: /OrlyEven_CV_12-2020.pdf
-
-Sitemap: http://www.atelier-even.com/sitemap.xml
