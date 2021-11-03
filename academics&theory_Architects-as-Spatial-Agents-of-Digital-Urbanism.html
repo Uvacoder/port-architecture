@@ -25,10 +25,6 @@
 
     <div class="navbar" id="navbar"></div>
 
-    <div class="logo">
-        <a href="/"> <img src="img/logo.png" alt="" width="200px" style="margin-right: 10px;"></a>
-    </div>
-
     <div class="row">
         <img class="pagetitle" src="img/Academics&Theory.png" alt="">
         <br>
@@ -38,13 +34,17 @@
         <div class="subtitle" style="margin-top: 20px; text-transform: uppercase;">Author: Orly Even</div>
         <div class="subtitle" style="margin-top: 20px; line-height: 1.2;">Proposed Research</div>
         <div class="imageinrow">
-            <img class="imageinrow" src="img/Academics&Theory/1024px-Amazon_Spheres_01.jpg">
+            <img name="img" class="imageinrow" data-modal="modal1"
+                src="img/Academics&Theory/1024px-Amazon_Spheres_01.jpg">
             <img class=magnifying src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal1" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
         </div>
         <div class="imagecredit">Figure#1: Amazon Spheres from the Seventh Avenue side, Seattle, Washington, U.S, 2018
             [Joe Mabel, <a href="https://creativecommons.org/licenses/by-sa/4.0" style="display: inline-block;">CC BY-SA
-                4.0</a>, via Wikimedia
-            Commons]</div>
+                4.0</a>, via Wikimedia Commons]</div>
 
         <div class="subtitle">Abstract:</div>
         <div class="abstract">
@@ -181,7 +181,8 @@
                     of doing architecture.
                 </span>Routledge.</p>
             <p>Benjamin, W. (1969/1935). The Work of Art in the Age of Mechanical Reproduction. In H. Arendt (Ed.),
-                <span style="font-style: italic;">Illuminations </span>(pp. 217–251). Schocken Books.</p>
+                <span style="font-style: italic;">Illuminations </span>(pp. 217–251). Schocken Books.
+            </p>
             <p>Bevir, M., & Rhodes, R. (2006). <span style="font-style: italic;">Governance Stories. </span>(pp.
                 217–251)Routledge.</p>
             <p>Carr, C. (2018, August 9). Wagering the Waterfront ? Angling the abc & xyz of Quayside Toronto. <span
@@ -236,7 +237,8 @@
             <p>Krueger, R., Gibbs, D., & Carr, C. (2018). Examining regional competitiveness and the pressures of rapid
                 growth : An interpretive institutionalist account of policy responses in three city regions.
                 <i>Environment and Planning C: Politics and Space, 36</i>(6), 965–986. <a class="endnote"
-                    href="https://doi.org/10.1177/2399654418767661">https://doi.org/10.1177/2399654418767661</a></p>
+                    href="https://doi.org/10.1177/2399654418767661">https://doi.org/10.1177/2399654418767661</a>
+            </p>
             <p>Kunkle, F. (2021, February 2). Amazon unveils Helix building as heart of campus in Arlington. <i>The
                     Washington Post. </i><a class="endnote"
                     href="https://www.washingtonpost.com/dc-md-va/2021/02/02/amazon-arlingon-headquarters-helix/">https://www.washingtonpost.com/dc-md-va/2021/02/02/amazon-arlingon-headquarters-helix/</a>
@@ -283,7 +285,8 @@
             <p>Schmid, C., Karaman, O., Hanakata, N. C., Kallenberger, P., Kockelkorn, A., Sawyer, L., Streule, M., &
                 Wong, K. P. (2018). Towards a new vocabulary of urbanisation processes: A comparative approach. In
                 <i>Urban Studies </i>(Vol. 55, Issue 1). <a class="endnote"
-                    href="https://doi.org/10.1177/0042098017739750">https://doi.org/10.1177/0042098017739750</a></p>
+                    href="https://doi.org/10.1177/0042098017739750">https://doi.org/10.1177/0042098017739750</a>
+            </p>
             <p>Schoettler, J. (2019). <i>From the ground up. </i>Amazon. <a class="endnote"
                     href="https://www.aboutamazon.com/news/job-creation-and-investment/from-the-ground-up?utm_medium=website&utm_source=archdaily.com">https://www.aboutamazon.com/news/job-creation-and-investment/from-the-ground-up?utm_medium=website&utm_source=archdaily.com</a>
             </p>
@@ -302,9 +305,9 @@
         </div>
     </div>
 
-        <footer class="footer" id="footer"></footer>
+    <footer class="footer" id="footer"></footer>
 
-        <script src="pages.js"></script>
+    <script src="pages.js"></script>
 
 </body>
 

@@ -1,29 +1,29 @@
 ﻿<!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166090330-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-166090330-1');
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Atelier Even | Architecture Gallery</title>
-        <link rel="icon" type="image/png" href="img/favicon_io/android-chrome-192x192.png" sizes="192x192">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="article.css">
-    </head>
-    
-    <body>
-    
-        <div class="navbar" id="navbar"></div>   
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166090330-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-166090330-1');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Even | Architecture Gallery</title>
+    <link rel="icon" type="image/png" href="img/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+
+    <div class="navbar" id="navbar"></div>
 
     <div class="row">
         <img class="pagetitle" src="img/Architecture_Gallery.png" alt="">
@@ -31,12 +31,15 @@
         <div class="mainheadline">haifa residential</div>
 
         <div class="subtitle" style="margin-top: 20px; text-transform: uppercase;">@ Erez Shani Architecture</div>
-        <a href="img/Architecture_Gallery/Haifa-Residential/nw-color-1-rendered.jpg" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/nw-color-1-rendered.jpg">
-                <img class=magnifying src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal1"
+                src="img/Architecture_Gallery/Haifa-Residential/nw-color-1-rendered.jpg">
+            <img class=magnifying src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal1" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div>
             <float class="subtitle">Location:</float>
             <float class="description">Haifa, Israel</float>
@@ -74,96 +77,127 @@
         </div>
 
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/Before.png" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/Before.png">
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal2"
+                src="img/Architecture_Gallery/Haifa-Residential/Before.png">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal2" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">1920’s Building Before Demolition, 2015, View from North-West</div>
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/west_elevation.jpg" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/west_elevation.jpg">
-                <img class=magnifying src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal3"
+                src="img/Architecture_Gallery/Haifa-Residential/west_elevation.jpg">
+            <img class=magnifying src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal3" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">West façade</div>
 
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/IMG_9007.png" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/IMG_9007.png">
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal4"
+                src="img/Architecture_Gallery/Haifa-Residential/IMG_9007.png">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal4" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">Model: Idan Zilbershtein</div>
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/IMG_9009.png" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/IMG_9009.png">
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal5"
+                src="img/Architecture_Gallery/Haifa-Residential/IMG_9009.png">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal5" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">Model: Idan Zilbershtein</div>
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-Ground[3.13]with landscape.png"
-            target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow"
-                    src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-Ground[3.13]with landscape.png">
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal6"
+                src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-Ground[3.13]with landscape.png">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal6" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">Ground Floor Plan</div>
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-First.png" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-First.png">
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal7"
+                src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_Plan-First.png">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal7" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">First Floor Plan</div>
 
         <div class="twoinrow">
-            <a href="img/Architecture_Gallery/Haifa-Residential/Jonathan9_scheme.png" target="_blank">
-                <div class="imageinrow">
-                    <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_scheme.png">
-                    <img class=magnifying src="img/magnifying-glass-white.svg">
-                </div>
-            </a>
-        </div>
-        <div class="twoinrow" style="float:right">
-            <a href="img/Architecture_Gallery/Haifa-Residential/clinker.png" target="_blank">
-                <div class="imageinrow">
-                    <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/clinker.png">
-                    <img class=magnifying src="img/magnifying-glass-white.svg" style="margin-bottom: 8%;">
-                </div>
-            </a>
-        </div>
-
-        <a href="img/Architecture_Gallery/Haifa-Residential/patio1-color-1.jpg" target="_blank">
             <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/patio1-color-1.jpg">
-                <img class=magnifying src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
-        <div class="imagecredit">Patio, First Floor Bridge</div>
-
-        <a href="img/Architecture_Gallery/Haifa-Residential/duplex-color-1.jpg" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/duplex-color-1.jpg">
+                <img name="img" class="imageinrow" data-modal="modal8"
+                    src="img/Architecture_Gallery/Haifa-Residential/Jonathan9_scheme.png">
                 <img class=magnifying src="img/magnifying-glass-white.svg">
             </div>
-        </a>
+            <div id="modal8" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
+        </div>
+        <div class="twoinrow" style="float:right">
+            <div class="imageinrow">
+                <img name="img" class="imageinrow" data-modal="modal9"
+                    src="img/Architecture_Gallery/Haifa-Residential/clinker.png">
+                <img class=magnifying src="img/magnifying-glass-white.svg" style="margin-bottom: 8%;">
+            </div>
+            <div id="modal9" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
+        </div>
+
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal10"
+                src="img/Architecture_Gallery/Haifa-Residential/patio1-color-1.jpg">
+            <img class=magnifying src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal10" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+        <div class="imagecredit">Patio, First Floor Bridge</div>
+
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal11"
+                src="img/Architecture_Gallery/Haifa-Residential/duplex-color-1.jpg">
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal11" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">Rooftop Duplex, View from West</div>
 
-        <a href="img/Architecture_Gallery/Haifa-Residential/IMG_5997.jpg" target="_blank">
-            <div class="imageinrow">
-                <img class="imageinrow" src="img/Architecture_Gallery/Haifa-Residential/IMG_5997.jpg">
-                <img class=magnifying src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img name="img" class="imageinrow" data-modal="modal12"
+                src="img/Architecture_Gallery/Haifa-Residential/IMG_5997.jpg">
+            <img class=magnifying src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal12" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit">Under Construction, July 2019</div>
         <br>
 
@@ -172,7 +206,7 @@
         </div>
 
     </div>
-       
+
     <footer class="footer" id="footer"></footer>
 
     <script src="pages.js"></script>

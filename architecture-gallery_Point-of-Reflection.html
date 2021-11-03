@@ -1,250 +1,338 @@
 ﻿<!DOCTYPE html>
 <html>
 
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166090330-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-166090330-1');
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Atelier Even | Architecture Gallery</title>
-        <link rel="icon" type="image/png" href="img/favicon_io/android-chrome-192x192.png" sizes="192x192">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="article.css">
-    </head>
-    
-    <body>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166090330-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-166090330-1');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
 
-    <style> 
-        html, body {
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Even | Architecture Gallery</title>
+    <link rel="icon" type="image/png" href="img/favicon_io/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+
+    <style>
+        html,
+        body {
             background-image: url('img/cubes-orly-grey.png');
-            }
+        }
     </style>
-        
-        <div class="navbar" id="navbar"></div>
 
-    <div class="row" >
-        <img class="pagetitle" src="img/Architecture_Gallery.png" alt="" >
+    <div class="navbar" id="navbar"></div>
+
+    <div class="row">
+        <img class="pagetitle" src="img/Architecture_Gallery.png" alt="">
         <br>
         <div class="mainheadline" style="line-height: 1.2; color:#FFD700;">
             <div>Point of Reflection:</div>
             <div>Public Mini-Library in Rabin Square</div>
         </div>
 
-        <div class="subtitle" style="margin-top: 20px; text-transform: uppercase; color:#FFD700;"><p>2<sup style="text-transform: none;">nd</sup> Year Studio Project @ David Azrieli School of Architecture, Tel-Aviv University</p>Advisors: Arch. Zvi Harel, Arch. Morris Shapiro</div>
-        <a href="img/Architecture_Gallery/Point-of-Reflection/IMG_6035.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/IMG_6035.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>      
-        <div><float class="subtitle" style="color:#FFD700;">Location:</float>
+        <div class="subtitle" style="margin-top: 20px; text-transform: uppercase; color:#FFD700;">
+            <p>2<sup style="text-transform: none;">nd</sup> Year Studio Project @ David Azrieli School of Architecture,
+                Tel-Aviv University</p>Advisors: Arch. Zvi Harel, Arch. Morris Shapiro
+        </div>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal1"
+                src="img/Architecture_Gallery/Point-of-Reflection/IMG_6035.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal1" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+        <div>
+            <float class="subtitle" style="color:#FFD700;">Location:</float>
             <float class="description" style="color:white;">Tel Aviv - Jaffa, Israel</float>
         </div>
-        <div><float class="subtitle" style="color:#FFD700;">Year:</float>
+        <div>
+            <float class="subtitle" style="color:#FFD700;">Year:</float>
             <float class="description" style="color:white;">2006</float>
         </div>
-        <div><float class="subtitle" style="color:#FFD700;">Project Area:</float>
+        <div>
+            <float class="subtitle" style="color:#FFD700;">Project Area:</float>
             <float class="description" style="color:white;">53 &#13217</float>
         </div>
-        <div><float class="subtitle" style="color:#FFD700;">Design Team:</float>
+        <div>
+            <float class="subtitle" style="color:#FFD700;">Design Team:</float>
             <float class="description" style="color:white;">Orly Even</float>
         </div>
         <div class="description" style="color:white;">
-            <p>The project is located in the city of Tel-Aviv’s main public square. Adjacent to the City Hall, the square is ordinarily populated by passers-by. On special occasions it is the central location for political rallies, local/national demonstrations and parades.  
+            <p>The project is located in the city of Tel-Aviv’s main public square. Adjacent to the City Hall, the
+                square is ordinarily populated by passers-by. On special occasions it is the central location for
+                political rallies, local/national demonstrations and parades.
             </p>
-            <p> <span style="font-weight: bolder;">Concept:</span> The concept of the project is derived from Michel Foucault’s idea of Heterotopia – a space of otherness in the social realm, which is opposed to all other places within the realm. My aim in this exercise was to plan a parallel place, mirroring the outside world yet somewhat opposing it, being isolated yet penetrable. The chosen location for the project was intended to allow the visitor to reclaim their power over the public realm, assuming the position of a powerful observer. Visitors hold total control over what they see, once Rabin Square is spread in front of them in 360° – they choose where to locate themselves inside the project, how to frame the view and what to look at.
+            <p> <span style="font-weight: bolder;">Concept:</span> The concept of the project is derived from Michel
+                Foucault’s idea of Heterotopia – a space of otherness in the social realm, which is opposed to all other
+                places within the realm. My aim in this exercise was to plan a parallel place, mirroring the outside
+                world yet somewhat opposing it, being isolated yet penetrable. The chosen location for the project was
+                intended to allow the visitor to reclaim their power over the public realm, assuming the position of a
+                powerful observer. Visitors hold total control over what they see, once Rabin Square is spread in front
+                of them in 360° – they choose where to locate themselves inside the project, how to frame the view and
+                what to look at.
             </p>
-            <p><span style="font-weight: bolder;">Architectural expression:</span> the chosen programme was a small media library containing books, CDs and DVDs, randomly placed on book shelves, and free for public use. Anyone is free to move, remove or add as they please. Only one single architectural element is used throughout the structure – wooden book shelves, functioning also as floor, stairs and benches. Since the exterior walls are made of glass, the gaps between the books become peeking holes to the outside. The perceived reality is constantly changed, as the books are shifted throughout the library. Thus, a dynamic filter system is applied on the public square, symbolically emphasizing or blurring segments of reality, or even reality as a whole.
+            <p><span style="font-weight: bolder;">Architectural expression:</span> the chosen programme was a small
+                media library containing books, CDs and DVDs, randomly placed on book shelves, and free for public use.
+                Anyone is free to move, remove or add as they please. Only one single architectural element is used
+                throughout the structure – wooden book shelves, functioning also as floor, stairs and benches. Since the
+                exterior walls are made of glass, the gaps between the books become peeking holes to the outside. The
+                perceived reality is constantly changed, as the books are shifted throughout the library. Thus, a
+                dynamic filter system is applied on the public square, symbolically emphasizing or blurring segments of
+                reality, or even reality as a whole.
             </p>
         </div>
-        
-        <a href="img/Architecture_Gallery/Point-of-Reflection/models.png" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/models.png"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>      
+
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal2"
+                src="img/Architecture_Gallery/Point-of-Reflection/models.png">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal2" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
 
         <div class="twoinrow">
-            <a href="img/Architecture_Gallery/Point-of-Reflection/site-plan.png" target="_blank"> 
-                <div class="imageinrow"> 
-                    <div class="imageinrow" style="background-image:url(img/Architecture_Gallery/Point-of-Reflection/site-plan.png); 
-                    height: 550px; background-position:left; background-size: cover;">      
-                    </div> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg" >
+            <div class="imageinrow">
+                <div class="imageinrow" name="img" data-modal="modal3" style="background-image:url(img/Architecture_Gallery/Point-of-Reflection/site-plan.png); 
+                    height: 550px; background-position:left; background-size: cover;">
                 </div>
-            </a>
-        </div>
-        <div class="twoinrow" style="float:right;"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/plans.png" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/plans.png"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg" style="margin-bottom: 10%;">
-                </div>
-            </a> 
-        </div>
-
-        <a href="img/Architecture_Gallery/Point-of-Reflection/plan-scheme.png" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/plan-scheme.png"> 
-            </div>
-        </a>   
-
-        <a href="img/Architecture_Gallery/Point-of-Reflection/scan2.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/scan2.jpg"> 
                 <img class="magnifying" src="img/magnifying-glass-white1.svg">
             </div>
-        </a>
+            <div id="modal3" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content" src="img/Architecture_Gallery/Point-of-Reflection/site-plan.png">
+            </div>
+        </div>
+        <div class="twoinrow" style="float:right;">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal4"
+                    src="img/Architecture_Gallery/Point-of-Reflection/plans.png">
+                <img class="magnifying" src="img/magnifying-glass-white1.svg" style="margin-bottom: 10%;">
+            </div>
+            <div id="modal4" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
+        </div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/model-square.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/model-square.jpg"> 
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal5"
+                src="img/Architecture_Gallery/Point-of-Reflection/plan-scheme.png">
+        </div>
+        <div id="modal5" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal6"
+                src="img/Architecture_Gallery/Point-of-Reflection/scan2.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal6" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal7"
+                src="img/Architecture_Gallery/Point-of-Reflection/model-square.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal7" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+        <div class="imagecredit" style="color:white;">View from south</div>
+
+        <div class="twoinrow">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal8"
+                    src="img/Architecture_Gallery/Point-of-Reflection/square-through-model.png">
                 <img class="magnifying" src="img/magnifying-glass-white1.svg">
             </div>
-        </a>     
-        <div class="imagecredit" style="color:white;">View from south</div> 
-        
-        <div class="twoinrow"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/square-through-model.png" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/square-through-model.png"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>    
-            </a> 
+            <div id="modal8" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Looking Outward fron Within Library</div>
         </div>
-        <div class="twoinrow" style="float:right;"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/programme.png" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/programme.png"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>
-            </a> 
+        <div class="twoinrow" style="float:right;">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal9"
+                    src="img/Architecture_Gallery/Point-of-Reflection/programme.png">
+                <img class="magnifying" src="img/magnifying-glass-white1.svg">
+            </div>
+            <div id="modal9" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Programme</div>
         </div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/axo-interior.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/axo-interior.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal11"
+                src="img/Architecture_Gallery/Point-of-Reflection/axo-interior.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal11" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit" style="color:white;">Interior</div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/IMG_5997.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/IMG_5997.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal12"
+                src="img/Architecture_Gallery/Point-of-Reflection/IMG_5997.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal12" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit" style="color:white;">Model</div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/sec-a.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/sec-a.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal13"
+                src="img/Architecture_Gallery/Point-of-Reflection/sec-a.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal13" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit" style="color:white;">Sec A-A</div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/sec-b.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/sec-b.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal14"
+                src="img/Architecture_Gallery/Point-of-Reflection/sec-b.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal14" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit" style="color:white;">Sec B-B</div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/sec-c.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/sec-c.jpg"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal15"
+                src="img/Architecture_Gallery/Point-of-Reflection/sec-c.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal15" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="imagecredit" style="color:white;">Sec C-C</div>
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/axonometry.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/axonometry.jpg"> 
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal16"
+                src="img/Architecture_Gallery/Point-of-Reflection/axonometry.jpg">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal16" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+        <div class="imagecredit" style="color:white;">Wooden Shelves Axonometry</div>
+
+        <div class="twoinrow">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal17"
+                    src="img/Architecture_Gallery/Point-of-Reflection/detail1-floor.jpg">
                 <img class="magnifying" src="img/magnifying-glass-white1.svg">
             </div>
-        </a>  
-        <div class="imagecredit" style="color:white;">Wooden Shelves Axonometry</div>     
-
-        <div class="twoinrow"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/detail1-floor.jpg" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/detail1-floor.jpg"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>    
-            </a> 
+            <div id="modal17" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Detail#1: Plywood Floor</div>
         </div>
-        <div class="twoinrow" style="float:right;"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/detail2-structural-element.jpg" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/detail2-structural-element.jpg"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>
-            </a> 
+        <div class="twoinrow" style="float:right;">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal18"
+                    src="img/Architecture_Gallery/Point-of-Reflection/detail2-structural-element.jpg">
+                <img class="magnifying" src="img/magnifying-glass-white1.svg">
+            </div>
+            <div id="modal18" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Detail#2: Structural Wood Element</div>
         </div>
 
-        <div class="twoinrow"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/detail3-glass-wood.jpg" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/detail3-glass-wood.jpg"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>
-            </a> 
+        <div class="twoinrow">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal19"
+                    src="img/Architecture_Gallery/Point-of-Reflection/detail3-glass-wood.jpg">
+                <img class="magnifying" src="img/magnifying-glass-white1.svg">
+            </div>
+            <div id="modal19" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Detail#3: Glass-Wood Encounter</div>
         </div>
-        <div class="twoinrow" style="float:right;"> 
-            <a href="img/Architecture_Gallery/Point-of-Reflection/detail4-doorway.jpg" target="_blank"> 
-                <div class="imageinrow"> 
-                    <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/detail4-doorway.jpg"> 
-                    <img class="magnifying" src="img/magnifying-glass-white1.svg">
-                </div>    
-            </a> 
+        <div class="twoinrow" style="float:right;">
+            <div class="imageinrow">
+                <img class="imageinrow" name="img" data-modal="modal20"
+                    src="img/Architecture_Gallery/Point-of-Reflection/detail4-doorway.jpg">
+                <img class="magnifying" src="img/magnifying-glass-white1.svg">
+            </div>
+            <div id="modal20" class="modal">
+                <span class="close">&#10799;</span>
+                <img class="modal-content">
+            </div>
             <div class="imagecredit" style="color:white;">Detail#4: Doorpost</div>
         </div>
-        
-        <a href="img/Architecture_Gallery/Point-of-Reflection/West-facade.png" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/West-facade.png"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>  
-        <div class="imagecredit" style="color:white;">West Façade </div>   
 
-        <a href="img/Architecture_Gallery/Point-of-Reflection/IMG_6036.png" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Architecture_Gallery/Point-of-Reflection/IMG_6036.png"> 
-                <img class="magnifying" src="img/magnifying-glass-white1.svg">
-            </div>
-        </a>  
-      
-        
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal21"
+                src="img/Architecture_Gallery/Point-of-Reflection/West-facade.png">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal21" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+        <div class="imagecredit" style="color:white;">West Façade </div>
+
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal22"
+                src="img/Architecture_Gallery/Point-of-Reflection/IMG_6036.png">
+            <img class="magnifying" src="img/magnifying-glass-white1.svg">
+        </div>
+        <div id="modal22" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
+
+
     </div>
-         
+
     <div id="lastline"
         style="font-size:13px;text-align:center;border-top : 1px solid#103443;padding: 3px; margin: 1% 3% 0 3%; color:white;">
         <p>Copyright &copy; 2020, <span style="font-style:oblique">ATELIER EVEN</span>
-        <span><a href="/"><img src="img/logo-no-text-inverted.png" width="30px" style="margin-left: 5px;"></a></span> </p>
+            <span><a href="/"><img src="img/logo-no-text-inverted.png" width="30px"
+                        style="margin-left: 5px;"></a></span>
+        </p>
     </div>
 
     <script src="pages.js"></script>
-       
+
 </body>
 
 </html>
