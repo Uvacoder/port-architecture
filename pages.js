@@ -41,7 +41,7 @@ magnifyingClick.forEach(function (magnifier) {
         modal.addEventListener('click', closeModal);
         modalImg.addEventListener('click', function (e) { e.stopPropagation() })
     }
-})
+});
 
 function closeModal() {
     var modal = document.querySelector('.modal.zoom');
