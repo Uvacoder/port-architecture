@@ -34,7 +34,8 @@ const webDevelopmentImg = [
     'img/Thumbnails/card-game.jpg',
     'img/Thumbnails/todo-list.png',
     'img/Thumbnails/trade-app.png',
-    'img/Thumbnails/mysender-app.png'
+    'img/Thumbnails/mysender-app.png',
+    'img/Thumbnails/flat-devices-mockup-original.png'
 ];
 
 const changeImgTimeInterval = 4000;

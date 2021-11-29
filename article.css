@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic');
+
 html, body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -172,6 +173,17 @@ div .imageinrow {
    padding-right: 3px;
 }
 
+.drop-cap-web {
+   font-size: 48px;
+   float: left;
+   color: #103443;
+   line-height: 38px;
+   font-weight: bold;
+   text-indent: 0.3em;
+   padding-right: 5px;
+   text-transform: uppercase;
+}
+
 .imagecredit {
    line-height: 1.1;
    font-size: 12px;
@@ -196,6 +208,13 @@ div .imageinrow {
 .slideshow-container {
    width: 100%;
    position: relative;
+   overflow: hidden;
+}
+
+.slideshow-slide {
+   display: flex;
+   width: 100%;
+   height: 420px;
 }
 
 .slides {
@@ -256,6 +275,14 @@ div .imageinrow {
    background: rgba(255, 255, 255, 0.8);
 }
 
+.slide-transition {
+   transition: transform 0.4s ease-in-out;
+   -webkit-transition: -webkit-transform 0.4s ease-in-out;
+   -moz-transition: -moz-transform 0.4s ease-in-out;
+   -o-transition: -o-transform 0.4s ease-in-out;
+   -ms-transition: -ms-transform 0.4s ease-in-out;
+}
+
 /*modal*/
 
 .modal {
@@ -285,6 +312,7 @@ div .imageinrow {
    from {
       transform: scale(0)
    }
+
    to {
       transform: scale(1)
    }
@@ -294,6 +322,7 @@ div .imageinrow {
    from {
       transform: scale(0)
    }
+
    to {
       transform: scale(1)
    }
@@ -303,6 +332,7 @@ div .imageinrow {
    from {
       transform: scale(0)
    }
+
    to {
       transform: scale(1)
    }
@@ -312,6 +342,7 @@ div .imageinrow {
    from {
       transform: scale(0)
    }
+
    to {
       transform: scale(1)
    }
@@ -321,6 +352,7 @@ div .imageinrow {
    from {
       transform: scale(0)
    }
+
    to {
       transform: scale(1)
    }
@@ -338,6 +370,7 @@ div .imageinrow {
    from {
       transform: scale(2)
    }
+
    to {
       transform: scale(1)
    }
@@ -347,6 +380,7 @@ div .imageinrow {
    from {
       transform: scale(2)
    }
+
    to {
       transform: scale(1)
    }
@@ -356,6 +390,7 @@ div .imageinrow {
    from {
       transform: scale(2)
    }
+
    to {
       transform: scale(1)
    }
@@ -365,6 +400,7 @@ div .imageinrow {
    from {
       transform: scale(2)
    }
+
    to {
       transform: scale(1)
    }
@@ -374,6 +410,7 @@ div .imageinrow {
    from {
       transform: scale(2)
    }
+
    to {
       transform: scale(1)
    }
@@ -393,9 +430,9 @@ div .imageinrow {
    -ms-transform: translateY(-450%);
    transition: transform 0.1s;
    -webkit-transition: -webkit-transform 0.1s;
-   -moz-transition: -webkit-transform 0.1s;
-   -o-transition: -webkit-transform 0.1s;
-   -ms-transition: -webkit-transform 0.1s;
+   -moz-transition: -moz-transform 0.1s;
+   -o-transition: -o-transform 0.1s;
+   -ms-transition: -ms-transform 0.1s;
 }
 
 .close {
@@ -417,34 +454,42 @@ div .imageinrow {
    .row {
       width: 100%;
    }
+
    .row>div:not(.threeinrow):not(.threeinrow-m):not(.twoinrow) {
       width: 96%;
       margin-right: 2%;
       margin-left: 2%;
    }
+
    .threeinrow {
       float: none;
       width: 100%;
    }
+
    .threeinrow-m {
       float: none;
       width: 100%;
       padding-left: none;
       padding-right: none;
    }
+
    .twoinrow {
       float: none;
       width: 100%;
    }
+
    .mainheadline {
       font-size: 28px;
    }
+
    .subtitle {
       line-height: 1.2;
    }
+
    .modal-content {
       max-width: 100%;
    }
+
    .close {
       top: 40px;
       right: 5px;
