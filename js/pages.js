@@ -1,12 +1,8 @@
 // adding footer
-$(function () {
-    $("#footer").load("../components/footer.html");
-});
+$(() => $("#footer").load("../components/footer.html"));
 
 //adding navbar
-$(function () {
-    $("#navbar").load("../components/navbar.html");
-});
+$(() => $("#navbar").load("../components/navbar.html"));
 
 //submitting contact form
 $('#contact-form').submit(function (e) {
@@ -26,29 +22,26 @@ $('#contact-form').submit(function (e) {
 })
 
 //image modals - open and close
-var magnifyingClick = document.querySelectorAll('.magnifying');
+let magnifyingClick = document.querySelectorAll('.magnifying');
 
-magnifyingClick.forEach(function (magnifier) {
-    magnifier.onclick = function () {
-        var img = magnifier.previousElementSibling;
-        var modalId = img.getAttribute("data-modal");
-        var modal = document.getElementById(modalId);
+magnifyingClick.forEach(magnifier => {
+    magnifier.onclick = () => {
+        const img = magnifier.previousElementSibling;
+        const modal = document.getElementById(img.getAttribute("data-modal"));
         modal.style.display = "block";
         modal.classList.add("zoom");
         img.classList.remove("zoom-out");
-        var modalImg = modal.querySelector(".modal-content");
+        const modalImg = modal.querySelector(".modal-content");
         modalImg.src = img.src || modalImg.src;
         modal.addEventListener('click', closeModal);
-        modalImg.addEventListener('click', function (e) { e.stopPropagation() })
+        modalImg.addEventListener('click', e => e.stopPropagation() )
     }
 });
 
 function closeModal() {
-    var modal = document.querySelector('.modal.zoom');
-    modal.style.display = "none";
-    modal.classList.remove("zoom");
-    var img = document.querySelector(`[data-modal="${modal.id}"]`);
-    img.classList.add("zoom-out");
+    const modal = $('.modal.zoom');
+    modal.css("display", "none").removeClass("zoom");
+    $(`[data-modal="${modal.attr('id')}"]`).addClass("zoom-out");
 };
 
 
