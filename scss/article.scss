@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700");
+@import "config";
+
+
+body {
+    font-family: $secondary-font-stack;
+    color: $text-color;
+    & > div:last-child {
+        & > a {
+            text-decoration: underline;
+
+            &::after {
+                content: none;
+                display: inline;
+                clear: none;
+            }
+        }
+    }
+}
+
+a {
+    & > div {
+        font-weight: bold;
+        float: right;
+        font-size: 17px;
+    }
+    /* Clear floats */
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.row {
+    width: 630px;
+    margin: auto;
+    line-height: 1.5;
+    & > div {
+        margin-bottom: 2%;
+    }
+}
+
+.headline {
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.mainheadline {
+    line-height: 1;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $primary-color;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid $secondary-color;
+    font-family: $font-stack;
+}
+
+.borderline {
+    border-top: 2px solid $secondary-color;
+    padding: 1%;
+}
+
+.subtitle {
+    line-height: 0.9;
+    font-size: 16px;
+    color: $primary-color;
+    font-style: oblique;
+    font-weight: 500;
+}
+
+.insidetitle {
+    text-align: center;
+    color: white;
+    background: rgb(160, 160, 160);
+}
+
+.insidetitle + .insidetitle {
+    margin-top: 1px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+div {
+    .imageinrow {
+        margin-bottom: 0;
+    }
+}
+
+.imageinrow {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-bottom: 3px;
+}
+
+.threeinrow {
+    float: left;
+    width: 32.3%;
+}
+
+.threeinrow-m {
+    float: left;
+    width: 32.3%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.twoinrow {
+    float: left;
+    width: 48%;
+}
+
+.magnifying {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+%texts {
+line-height: 1.4;
+    font-size: 14.5px;
+    text-align: justify;
+}
+
+.description {
+    @extend %texts;
+}
+
+.article {
+    @extend %texts;
+    text-indent: 1.5em;
+}
+
+.article-sub {
+    text-decoration: underline;
+    font-weight: bolder;
+    text-indent: 0;
+}
+
+.endnote {
+    line-height: 1.4;
+    font-size: 13px;
+    color: #7a7a7a;
+    text-align: justify;
+    display: inline-block;
+    text-indent: 0;
+}
+
+.quote {
+    line-height: 1.6;
+    font-size: 14.5px;
+    color: $primary-color;
+    text-align: justify;
+    font-style: oblique;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: bolder;
+}
+
+.drop-cap {
+    font-size: 75px;
+    float: left;
+    color: $primary-color;
+    line-height: 58px;
+    font-weight: bold;
+    text-indent: 0.3em;
+    padding-right: 3px;
+}
+
+.drop-cap-web {
+    font-size: 48px;
+    float: left;
+    color: $primary-color;
+    line-height: 38px;
+    font-weight: bold;
+    text-indent: 0.3em;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+.imagecredit {
+    line-height: 1.1;
+    font-size: 12px;
+}
+
+.abstract {
+    line-height: 1.4;
+    font-size: 14.5px;
+    color: black;
+    text-align: justify;
+    font-weight: bold;
+    border-bottom: 1px solid $primary-color;
+}
+
+.imagesource {
+    color: gray;
+}
+
+/* image slider */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-slide {
+    display: flex;
+    width: 100%;
+    height: 420px;
+}
+
+.slides {
+    display: none;
+}
+
+%arrows {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $white-background;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.right-arrow {
+    @extend %arrows;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.left-arrow {
+    @extend %arrows;
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider-nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+%slider-button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-button-selected {
+    @extend %slider-button;
+    background: $white-background;
+}
+
+.slider-button {
+    @extend %slider-button;
+    background: rgba(255, 255, 255, 0.2);
+
+    &:hover {
+        background: $white-background;
+    }
+}
+
+.slide-transition {
+    @include transition(transform, 0.4s, ease-in-out);
+}
+
+/*modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 94vh;
+    position: relative;
+    top: calc(50% + 27px);
+    @include translate(0, -50%);
+    @include transition(transform, 0.1s, ease);
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 35px;
+    @include transition(all, 0.2s, ease);
+
+    &:hover,
+    &:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.zoom {
+    @include animation(zoom, 0, 0.3s, ease);
+}
+
+@include keyframe(zoom) {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.zoom-out {
+    @include animation(zoom-out, 0, 0.2s);
+    animation: zoom-out 0.2s;
+}
+
+@include keyframe(zoom-out) {
+    from {
+        transform: scale(2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@import "article-mobile";

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 630px) {
+   .row {
+      width: 100%;
+   }
+
+   .row>div {
+      width: 96%;
+      margin-right: 2%;
+      margin-left: 2%;
+   }
+
+   .threeinrow {
+      float: none;
+      width: 100%;
+   }
+
+   .threeinrow-m {
+      float: none;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .twoinrow {
+      float: none;
+      width: 100%;
+   }
+
+   .mainheadline {
+      font-size: 28px;
+   }
+
+   .subtitle {
+      line-height: 1.2;
+   }
+
+   .modal-content {
+      max-width: 100%;
+   }
+
+   .close {
+      top: 40px;
+      right: 5px;
+      font-size: 28px;
+   }
+}

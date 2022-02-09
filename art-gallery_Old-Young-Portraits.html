@@ -26,13 +26,13 @@
         <div class="navbar" id="navbar"></div>
 
     <div class="row">
-        <img class="pagetitle" src="img/Art_Gallery.png" alt="" >
+        <img class="pagetitle" src="img/Art_Gallery.png" alt="Art_Gallery" >
         <br>
         <div class="mainheadline">OLD YOUNG PORTRAITS</div>
 
         <div class="subtitle" style="margin-top: 20px;">#01</div>
         
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/11_Self-BW.jpg"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/11_Self-BW.jpg" alt="A Portrait of the Artist as a Smiling Girl"> 
         
              
         <div class="subtitle">A Portrait of the Artist as a Smiling Girl</div>
@@ -40,7 +40,7 @@
         <div class="description">1st in a series of 3. After Chuck Close </div>
          
         
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/11_detail.jpg"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/11_detail.jpg" alt="detail" loading="lazy"> 
           
         
         <div class="subtitle">detail</div>
@@ -49,14 +49,14 @@
 
         <div class="subtitle">#02</div>
         
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/12_Self-Color.jpg"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/12_Self-Color.jpg" alt="A Portrait of the Artist as a Colored Girl" loading="lazy"> 
         
         <div class="subtitle">A Portrait of the Artist as a Colored Girl</div>
         <div class="subtitle">gouache stamping on paper, 140X100cm</div>
         <div class="description">3rd in a series of 3. After Chuck Close</div>
        
         
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/12_detail.jpg"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/12_detail.jpg" alt="detail" loading="lazy"> 
             
           
         <div class="subtitle">detail</div>
@@ -66,7 +66,7 @@
         <div class="subtitle">#03</div>
 
          
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/13_Ido.png"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/13_Ido.png" alt="Infant 1.0" loading="lazy"> 
         
          
         <div class="subtitle">Infant 1.0</div>
@@ -74,7 +74,7 @@
         <div class="description"> </div>
          
          
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/13_detail.png"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/13_detail.png" alt="detail" loading="lazy"> 
             
         
         <div class="subtitle">detail</div>
@@ -84,7 +84,7 @@
         <div class="subtitle">#04</div>
 
          
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/14_Amit.png"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/14_Amit.png" alt="Infant 2.0" loading="lazy"> 
         
          
         <div class="subtitle">Infant 2.0</div>
@@ -92,7 +92,7 @@
         <div class="description"> </div>
          
         
-        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/14_detail.png"> 
+        <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/14_detail.png" alt="detail" loading="lazy"> 
          
         
         <div class="subtitle">detail</div>
@@ -100,13 +100,18 @@
 
        
         <div class="subtitle">#05</div>
-        <a href="img/Art_Gallery/Old-Young-Portraits/15_Show-Me-on-the-Teddy.jpg" target="_blank"> 
-            <div class="imageinrow"> 
-                <img class="imageinrow" src="img/Art_Gallery/Old-Young-Portraits/15_Show-Me-on-the-Teddy.jpg"> 
-                <img class=magnifying src="img/magnifying-glass-white.svg">
-
-            </div>
-        </a>      
+        <div class="imageinrow">
+            <img class="imageinrow" name="img" data-modal="modal1"
+                src="img/Art_Gallery/Old-Young-Portraits/15_Show-Me-on-the-Teddy.jpg"
+                alt="Show Me on the Teddy Where the Pencil Touched You"
+                loading="lazy"
+                >
+            <img class=magnifying src="img/magnifying-glass-white.svg">
+        </div>
+        <div id="modal1" class="modal">
+            <span class="close">&#10799;</span>
+            <img class="modal-content">
+        </div>
         <div class="subtitle">Show Me on the Teddy Where the Pencil Touched You</div>
         <div class="subtitle">graphite pencil on paper, 55X70cm</div>
         <div class="description"></div>
@@ -115,10 +120,13 @@
 
         <div class="subtitle">#06</div>
             <div class="imageinrow"> 
-                <img class="imageinrow" name="img" data-modal="modal1" src="img/Art_Gallery/Old-Young-Portraits/16_Assembled.jpg"> 
+                <img class="imageinrow" name="img" data-modal="modal2" src="img/Art_Gallery/Old-Young-Portraits/16_Assembled.jpg"
+                alt="Assembled"
+                loading="lazy"
+                > 
                 <img class=magnifying src="img/magnifying-glass-white1.svg">
             </div>
-            <div id="modal1" class="modal">
+            <div id="modal2" class="modal">
                 <span class="close">&#10799;</span>
                 <img class="modal-content">
             </div>
@@ -130,10 +138,13 @@
 
         <div class="subtitle">#07</div>
             <div class="imageinrow">
-                <img class="imageinrow" name="img" data-modal="modal2" src="img/Art_Gallery/Old-Young-Portraits/17_florentin.jpg">
+                <img class="imageinrow" name="img" data-modal="modal3" src="img/Art_Gallery/Old-Young-Portraits/17_florentin.jpg"
+                alt="Tli’yat Avodot"
+                loading="lazy"
+                >
                 <img class=magnifying src="img/magnifying-glass-white.svg">
             </div>
-        <div id="modal2" class="modal">
+        <div id="modal3" class="modal">
             <span class="close">&#10799;</span>
             <img class="modal-content">
         </div>
@@ -145,10 +156,13 @@
 
         <div class="subtitle">#08</div>
             <div class="imageinrow"> 
-                <img class="imageinrow" name="img" data-modal="modal3" src="img/Art_Gallery/Old-Young-Portraits/18-Skeleton.png"> 
+                <img class="imageinrow" name="img" data-modal="modal4" src="img/Art_Gallery/Old-Young-Portraits/18-Skeleton.png"
+                alt="Bare Bones"
+                loading="lazy"
+                > 
                 <img class=magnifying src="img/magnifying-glass-white.svg">
             </div>
-        <div id="modal3" class="modal">
+        <div id="modal4" class="modal">
             <span class="close">&#10799;</span>
             <img class="modal-content">
         </div>

@@ -33,10 +33,12 @@ const academicsAndTheoryImg = [
 const webDevelopmentImg = [
     'img/Thumbnails/card-game.jpg',
     'img/Thumbnails/weather.jpg',
-    'img/Thumbnails/todo-list.png',
+    'img/Thumbnails/flat-devices-mockup-original.png',
+    'img/Thumbnails/mysender-form.png',
     'img/Thumbnails/trade-app.png',
     'img/Thumbnails/mysender-app.png',
-    'img/Thumbnails/flat-devices-mockup-original.png'
+    'img/Thumbnails/mysender-landing.jpg',
+    
 ];
 
 const changeImgTimeInterval = 4000;
@@ -61,12 +63,16 @@ function slideIntro() {
 };
 
 $(window).on('load', function () {
+    $('body,html').css('overflow', 'hidden'); 
     setTimeout(function () {
         slideIntro()
         changeImg("artGalleryImg", artGalleryImg, 0)
         changeImg("architectureGalleryImg", architectureGalleryImg, 0)
         changeImg("academicsAndTheoryImg", academicsAndTheoryImg, 0)
-        changeImg("webDevelopmentImg", webDevelopmentImg, 0)  
-    }, 4800)
+        changeImg("webDevelopmentImg", webDevelopmentImg, 0) 
+    }, 3400)
+    setTimeout(function() {
+        $('body,html').css('overflow', 'initial'); 
+    }, 6500)
     
 });
