@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700");
 @import "config";
 
-
 body {
     font-family: $secondary-font-stack;
     color: $text-color;
@@ -48,7 +47,7 @@ a {
 
 .mainheadline {
     line-height: 1;
-    font-size: 30px;
+    font-size: 1.7rem;
     text-transform: uppercase;
     color: $primary-color;
     text-align: center;
@@ -65,7 +64,7 @@ a {
 
 .subtitle {
     line-height: 0.9;
-    font-size: 16px;
+    font-size: 1rem;
     color: $primary-color;
     font-style: oblique;
     font-weight: 500;
@@ -128,7 +127,7 @@ div {
 }
 
 %texts {
-line-height: 1.4;
+    line-height: 1.4;
     font-size: 14.5px;
     text-align: justify;
 }
@@ -361,6 +360,24 @@ line-height: 1.4;
 
     to {
         transform: scale(1);
+    }
+}
+
+/*project navigation*/
+.project-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 3%;
+
+    & a {
+        color: $nav-color;
+
+        &:hover {
+            cursor: pointer;
+            color: $text-color;
+            font-weight: normal;
+        }
     }
 }
 

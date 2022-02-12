@@ -64,7 +64,7 @@
    }
 }
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1100px) {
    /* intro-page visibility on smaller screens */
    .coverImage {
       background-image: none;
@@ -87,8 +87,9 @@
 
    #navbar-links {
       display: none;
-      width: 100%;
+      width: 97%;
       flex-direction: column;
+      padding-top: 1vh;
 
       &.active {
          display: flex;
@@ -99,6 +100,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      width: 100%;
 
       li {
          width: 100%;
@@ -106,6 +108,14 @@
 
          a {
             padding: 0.5rem;
+         }
+      }
+   }
+
+   #main-page {
+      .navbar {
+         .toggle-button {
+            right: 3%;
          }
       }
    }
@@ -175,7 +185,7 @@
    }
 
    .toggle-button {
-      top: 0.8vh;
+      top: 0.7rem;
    }
 
    .headcolumn {
@@ -209,7 +219,7 @@
 
    .card {
       width: 95vw;
-      margin-bottom: 2vh;
+      margin: 1.2% 3.5% 2vh 3.5%;
       .section {
          width: 92%;
       }
@@ -230,11 +240,10 @@
    .contact-section {
       text-align: left;
    }
-
 }
 
 @media only screen and (max-width: 430px) {
-    %imagethumb {
+   %imagethumb {
       height: 270px;
    }
    #main-page .imagethumb1 {

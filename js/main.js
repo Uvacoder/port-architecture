@@ -1,8 +1,6 @@
 //navbar script:
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementById('navbar-links');
-toggleButton.addEventListener('click', function () {
-    navbarLinks.classList.toggle('active')
+$('.toggle-button').click( function () {
+    $('#navbar-links').slideToggle();
 });
 
 //image sliders:
@@ -63,16 +61,16 @@ function slideIntro() {
 };
 
 $(window).on('load', function () {
-    $('body,html').css('overflow', 'hidden'); 
+    $('body,html').css('overflow-y', 'hidden'); 
     setTimeout(function () {
         slideIntro()
         changeImg("artGalleryImg", artGalleryImg, 0)
         changeImg("architectureGalleryImg", architectureGalleryImg, 0)
         changeImg("academicsAndTheoryImg", academicsAndTheoryImg, 0)
         changeImg("webDevelopmentImg", webDevelopmentImg, 0) 
-    }, 3400)
+    }, 3800)
     setTimeout(function() {
-        $('body,html').css('overflow', 'initial'); 
-    }, 6500)
+         $('body,html').css('overflow-y', 'auto'); 
+     }, 6500)
     
 });

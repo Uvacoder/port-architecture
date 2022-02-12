@@ -1,0 +1,31 @@
+
+    <a class="prev">&#10094; previous</a>
+    <a class="next">next &#10095;</a>
+
+
+<script>
+    const artProjectsUrl = ['art-gallery_White-City-Black-City.html', 'art-gallery_Old-Young-Portraits.html', 'art-gallery_Tel-Aviv-Alternative.html', 'art-gallery_Unscaled.html'];
+    const archProjectsUrl = ['architecture-gallery_Rejuvenation-Trail.html', 'architecture-gallery_Azrieli-Sarona-Center.html', 'architecture-gallery_Haifa-Residential.html', `architecture-gallery_Artist's-Studio-Gallery.html`, 'architecture-gallery_Mixed-Use-Compound.html', 'architecture-gallery_Rothschild-117.html', 'architecture-gallery_Tempelhof-Messe.html', 'architecture-gallery_Point-of-Reflection.html'];
+    const academicsProjectUrl = ['academics&theory_The-Sublime-Object-of-Nazi-Architecture.html', 'academics&theory_Re-imagining-the-Face.html', 'academics&theory_Building-Entrances-as-Cultural-Narratives.html', 'academics&theory_On-A-Portrait-of-the-Artist-as-a-Young-Man.html', 'academics&theory_Architects-as-Spatial-Agents-of-Digital-Urbanism.html'];
+
+    // set an href attr to the links according to current window.location:
+    const setNavHref = (array) => {
+        itemToFind = window.location.href.split('/')[3];    
+        let nextIndex = array.indexOf(itemToFind);
+        let prevIndex = nextIndex;
+        nextIndex === array.length - 1 ? nextIndex = 0 : nextIndex++;
+        prevIndex === 0 ? prevIndex = array.length - 1 : prevIndex--;
+        $('.next').attr('href', `${array[nextIndex]}`);
+        $('.prev').attr('href', `${array[prevIndex]}`);
+    }
+
+    $(function () {
+                if (window.location.href.indexOf(`art-gallery`) >= 0) {
+                    setNavHref(artProjectsUrl);
+                } else if (window.location.href.indexOf(`architecture-gallery`) >= 0) {
+                    setNavHref(archProjectsUrl);
+                } else if (window.location.href.indexOf(`academics&theory`) >= 0) {
+                    setNavHref(academicsProjectUrl);
+                }
+        });
+</script>

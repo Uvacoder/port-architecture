@@ -30,6 +30,10 @@ $spaceamounts: (1, 2, 3);
     .py-#{$space} {
         padding: calc(#{$space}rem/2) 0;
     }
+    //padding bottom:
+    .pb-#{$space} {
+        padding-bottom: calc(#{$space}rem/2);
+    }
     //padding all:
     .p-#{$space} {
         padding: calc(#{$space}rem/2) ;

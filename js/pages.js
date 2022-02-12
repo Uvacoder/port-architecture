@@ -8,6 +8,11 @@ $(function () {
     $("#navbar").load("components/navbar.html");
 });
 
+//adding project-nav
+$(function () {
+    $(".project-nav").load("components/project-nav.html");
+});
+
 //submitting contact form
 $('#contact-form').submit(function (e) {
     e.preventDefault();
