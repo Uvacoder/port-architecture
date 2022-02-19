@@ -15,6 +15,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atelier Even | Web Development Portfolio</title>
+    <meta name="description" content="Web Development Portfolio by Orly Even">
+    <meta property=”og:title” content="Atelier Even | Web Development Portfolio"/>
+    <meta property=”og:type” content=”website” />
+    <meta property=”og:description” content="Web Development Portfolio by Orly Even"/>
     <link rel="icon" type="image/png" href="img/favicon_io/android-chrome-192x192.png" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="stylesheet" href="css/styles.css">
@@ -30,20 +34,20 @@
     <div class="headline py-1"><i>Web Design & Development Projects</i>
     </div>
     <div class="headline">
-        <a href="OrlyEven_CV-fullstack.pdf" target="_blank" aria-label="CV">
-            <img src="img/resume.png" alt="resume icon"><a href="https://www.flaticon.com/free-icons/resume"
-                title="resume icons"></a></img>
-        </a>
-        <a href="https://www.linkedin.com/in/orly-even/" target="_blank" aria-label="linkedin">
+        <a href="https://www.linkedin.com/in/orly-even/" target="_blank" aria-label="linkedin" class="tooltip">
+            <span class="tooltiptext">view Linkedin profile</span>
             <img src="img/linkedin.png" alt="View Linkedin Profile" /><a
                 href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons"></a></img>
         </a>
-        <a href="https://github.com/ateliereven" target="_blank" aria-label="Github">
+        <a href="https://github.com/ateliereven" target="_blank" aria-label="Github" class="tooltip">
             <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
+            <span class="tooltiptext">view Github profile</span>
         </a>
-        <a href="mailto:orly@atelier-even.com" target="_blank" aria-label="email">
+        <a href="mailto:orly@atelier-even.com" target="_blank" aria-label="email" class="tooltip">
+            <span class="tooltiptext">contact</span>
             <img src="img/mail.png" alt="email" /><a href="https://www.flaticon.com/free-icons/mail"
                 title="mail icons"></a></img>
+                
         </a>
     </div>
 
@@ -51,7 +55,8 @@
     <div class="about" style="margin-bottom: 0;">
         <div class="section-text"><b>Agenda:</b></div>
         <div class="section-text mb-2">I'm currently shifting to
-            a software-development role, following a substantial career as an architect and lecturer. All self-taught (she-codes; and Udemy courses), I've acquired
+            a software-development role, following a substantial career as an architect and lecturer. All self-taught
+            (she-codes; and Udemy courses), I've acquired
             hands-on
             experience in frontend and full-stack development of web apps, focusing on MERN stack.</div>
 
@@ -75,10 +80,10 @@
         <div class="section-text"><b>Projects:</b></div>
     </div>
 
-    
+
     <div id="web-sections" class="section-container">
         <section>
-            
+
             <div class="section-container">
                 <div class="card">
                     <div class="section">
@@ -90,16 +95,19 @@
                         </a>
                         <div class="section-text">A RESTful web app that allows business users to send feedback-surveys,
                             featuring
-                            OAuth, payments and emailing. Frontend written in React, using React-router, Redux,
+                            OAuth, payments (Stripe) and emailing (SendGrid). Frontend written in React, using React-router, Redux,
                             Redux-form.
                             Backend
-                            written in JS, hosted in Node.js and Express, using MongoDB Atlas and Mongoose.</div>
+                            written in JS, hosted in Node.js and Express, data managed with MongoDB.</div>
                     </div>
                     <div class="github py-1">
-                        <a class="ml-1" href="https://github.com/ateliereven/my-sender" target="_blank">
+                        <a class="ml-1 tooltip" href="https://github.com/ateliereven/my-sender" target="_blank">
+                            <span class="tooltiptext">view on Github</span>
                             <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
+                            
                         </a>
-                        <a href="https://my-sender.herokuapp.com/" target="_blank">
+                        <a href="https://my-sender.herokuapp.com/" target="_blank" class="tooltip">
+                            <span class="tooltiptext">view deployment</span>
                             <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
                                 href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
                         </a>
@@ -123,10 +131,13 @@
                             HTTP requests to an api.</div>
                     </div>
                     <div class="github py-1">
-                        <a class="ml-1" href="https://github.com/ateliereven/Weather-Widget-Activity-App" target="_blank">
+                        <a class="ml-1 tooltip" href="https://github.com/ateliereven/Weather-Widget-Activity-App"
+                            target="_blank">
+                            <span class="tooltiptext">view on Github</span>
                             <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
                         </a>
-                        <a href="https://weather-forecast-widget.herokuapp.com/" target="_blank">
+                        <a href="https://weather-forecast-widget.herokuapp.com/" target="_blank" class="tooltip">
+                            <span class="tooltiptext">view deployment</span>
                             <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
                                 href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
                         </a>
@@ -160,16 +171,42 @@
                             transforms and transitions.</div>
                     </div>
                     <div class="github py-1">
-                        <a class="ml-1" href="https://github.com/ateliereven/Card-Game" target="_blank">
+                        <a class="ml-1 tooltip" href="https://github.com/ateliereven/Card-Game" target="_blank">
+                            <span class="tooltiptext">view on Github</span>
                             <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
                         </a>
-                        <a href="https://ateliereven.github.io/Card-Game/" target="_blank">
+                        <a href="https://ateliereven.github.io/Card-Game/" target="_blank" class="tooltip">
+                            <span class="tooltiptext">view deployment</span>
                             <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
                                 href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
                         </a>
                     </div>
                 </div>
-
+                <div class="card">
+                    <div class="section">
+                        <a class="headcolumn" href="https://users-library-by-oe.herokuapp.com/" target="_blank">
+                            <div class="imagethumb1 fade-in-image mb-1"
+                                style="background-image:url(img/Web_Development/users-library.jpg);">
+                            </div>
+                            THE USERS LIBRARY
+                        </a>
+                        <div class="section-text">A simple user library app built with React and Material UI,
+                            implementing CRUD operations. Data is provided via an Ajax
+                            request to an api and saved to local storage, state is managed by Redux.
+                        </div>
+                    </div>
+                    <div class="github py-1">
+                        <a class="ml-1 tooltip" href="https://github.com/ateliereven/users-library" target="_blank">
+                            <span class="tooltiptext">view on Github</span>
+                            <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
+                        </a>
+                        <a href="https://users-library-by-oe.herokuapp.com/" target="_blank" class="tooltip">
+                            <span class="tooltiptext">view deployment</span>
+                            <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
+                                href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
+                        </a>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="section">
                         <a class="headcolumn" href="https://ateliereven.github.io/international-trading-app/"
@@ -179,7 +216,8 @@
                             </div>
                             TRADING APP
                         </a>
-                        <div class="section-text">A single-page web application displaying latest trade rates and chart
+                        <div class="section-text">A single-page web application displaying latest trade rates and
+                            chart
                             metal
                             rates,
                             fetching
@@ -188,40 +226,21 @@
                         </div>
                     </div>
                     <div class="github py-1">
-                        <a class="ml-1" href="https://github.com/ateliereven/international-trading-app" target="_blank">
+                        <a class="ml-1 tooltip" href="https://github.com/ateliereven/international-trading-app" target="_blank">
+                            <span class="tooltiptext">view on Github</span>
                             <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
                         </a>
-                        <a href="https://ateliereven.github.io/international-trading-app/" target="_blank">
+                        <a href="https://ateliereven.github.io/international-trading-app/" target="_blank" class="tooltip">
+                            <span class="tooltiptext">view deployment</span>
                             <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
                                 href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
                         </a>
                     </div>
                 </div>
+<div class="section"></div>
+            </div>
 
-                <div class="card">
-                    <div class="section">
-                        <a class="headcolumn" href="https://ateliereven.github.io/react-todo-app/" target="_blank">
-                            <div class="imagethumb1 fade-in-image mb-1"
-                                style="background-image:url(img/Web_Development/todo-list.png);">
-                            </div>
-                            TODO LIST
-                        </a>
-                        <div class="section-text">A React-based to-do list web application. State is managed by the App
-                            component.
-                        </div>
-                    </div>
-                    <div class="github py-1">
-                        <a class="ml-2" href="https://github.com/ateliereven/react-todo-app" target="_blank">
-                            <img src="img/iconmonstr-github-1.svg" alt="View on Github" />
-                        </a>
-                        <a href="https://ateliereven.github.io/react-todo-app/" target="_blank">
-                            <img src="img/project-launch.png" alt="View Deployment" width="25px"><a
-                                href="https://www.flaticon.com/free-icons/portal" title="portal icons"></a></img>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="section"></div>
+            
         </section>
     </div>
 

@@ -34,9 +34,9 @@ const webDevelopmentImg = [
     'img/Thumbnails/flat-devices-mockup-original.png',
     'img/Thumbnails/mysender-form.png',
     'img/Thumbnails/trade-app.png',
-    'img/Thumbnails/mysender-app.png',
+    'img/Thumbnails/users-library.jpg',
     'img/Thumbnails/mysender-landing.jpg',
-    
+    'img/Thumbnails/mysender-app.png',   
 ];
 
 const changeImgTimeInterval = 4000;

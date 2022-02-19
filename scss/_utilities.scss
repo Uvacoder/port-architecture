@@ -1,13 +1,42 @@
 .clearfix {
     &::after {
-    content: "";
-    clear: both;
-    display: table;
+        content: "";
+        clear: both;
+        display: table;
     }
 }
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.tooltip {
+    position: relative;
+
+    .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: $primary-color;
+        color: #fff;
+        font-size: 0.8rem;
+        text-align: center;
+        font-style: normal;
+        padding: 5px;
+        border-radius: 6px;
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        width:max-content;
+        top: 100%;
+        left: 50%;
+        margin-left: -90%;
+    }
+
+    &:hover {
+        .tooltiptext {
+            visibility: visible;
+        }
+    }
 }
 
 // set margin and padding classes:
@@ -36,6 +65,6 @@ $spaceamounts: (1, 2, 3);
     }
     //padding all:
     .p-#{$space} {
-        padding: calc(#{$space}rem/2) ;
+        padding: calc(#{$space}rem/2);
     }
 }
